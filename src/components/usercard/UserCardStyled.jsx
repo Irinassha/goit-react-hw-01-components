@@ -1,4 +1,6 @@
-.profile {
+import styled from 'styled-components';
+
+export const ProfileStyled = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,31 +8,24 @@
   width: 400px;
   height: auto;
   margin: 0 auto;
+  margin-top: 40px;
   padding-top: 40px;
-  cursor: pointer;
-  background-color: white;
-  margin-bottom: 30px;
 
   &:hover {
     transform: scale(1.1);
     box-shadow: 0px 2px 2px 2px rgb(114, 31, 231, 0.2);
   }
-  &:focus {
-    transform: scale(1.1);
-    box-shadow: 0px 2px 2px 2px rgb(114, 31, 231, 0.2);
-  }
-}
+`;
 
-.description {
+export const DescriptionStiled = styled.dav`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 20px;
-}
+`;
 
-.avatar {
+export const AvanarStiled = styled.img`
   width: 150px;
   margin-bottom: 15px;
   border-radius: 50%;
@@ -41,47 +36,19 @@
   &:hover {
     transform: scale(1.1);
   }
-}
+`;
 
-.name {
+export const NameStyled = styled.p`
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
   margin-bottom: 10px;
-}
+`;
 
-.tag {
+export const TagLocationStyled = styled.p`
   margin: 0;
   margin-bottom: 10px;
   color: gray;
-}
+`;
 
-.stats {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  justify-content: space-between;
-}
-
-.labelli {
-  margin: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
-  background-color: rgb(228, 225, 225);
-  gap: 10px;
-  border: 0.1px solid rgb(192, 191, 191);
-}
-
-.label {
-  color: gray;
-}
-
-.quantity {
-  font-weight: 500;
-}
+export const ListStyled = styled.ul``;
